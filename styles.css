@@ -1,0 +1,156 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main{
+  width: 60rem;
+  min-height: 80vh;
+  display: flex;
+  /* flex: 0 0 auto; */
+}
+
+section{
+    flex: 0 1 50%;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  border-radius:  0 0.8rem 0.8rem 0;
+}
+
+.position{
+  position: relative;
+  margin-left: 2.5rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
+}
+
+h1{
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  width: 14.13rem;
+}
+
+/* buttons */
+a{
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 3rem auto;
+  display: inline-block;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  padding: 0.8rem 1.5rem;
+  border-radius: 20% / 50%;
+}
+
+.suvs  a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury a{
+  color: hsl(179, 100%, 13%);
+}
+
+a:hover{
+  border: 2px solid white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+@media screen and (max-width: 56.3rem){
+
+  body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: hsl(0, 0%, 95%);
+  }
+
+  main{
+    margin-top: 3vh;
+    flex-direction: column;
+    /* width: 22rem; */
+    width: 60vw;
+    min-width: 22rem;
+    max-width: 27.8rem;
+    justify-content: center;
+  }
+
+  section{
+    height: 30rem;
+  }
+
+  p{
+    width: 15rem;
+  }
+
+  a{
+    margin: 1.5rem auto;
+    margin-bottom: 3rem;
+  }
+
+  .position{
+    min-width: 15.4rem;
+  }
+
+  .sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius:  0.8rem 0.8rem 0 0;
+  }
+
+  .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.8rem 0.8rem;
+    margin-bottom: 5vh;
+  }
+}
